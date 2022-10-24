@@ -1,0 +1,41 @@
+﻿@model CalcularDosPuntos.Models.Puntos
+<div class="container-fluid">
+
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+       
+                    @Html.LabelFor(model => model.X1, new { @class = "text-danger", @style = "font: 150% sans-serif;" }):
+                    <h1 class="text-success"> @Html.DisplayFor(model => model.X1, new { @class = "text-danger" })</h1>
+      
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Y1, new { @class = "text-danger", @style = "font: 150% sans-serif;" }):
+                <h1 class="text-success"> @Html.DisplayFor(model => model.Y1, new { @class = "text-danger" })</h1>
+            </div>
+
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                @Html.LabelFor(model => model.X2, new { @class = "text-danger", @style = "font: 150% sans-serif;" }):
+                <h1 class="text-success"> @Html.DisplayFor(model => model.X2, new { @class = "text-danger" })</h1>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Y2, new { @class = "text-danger", @style = "font: 150% sans-serif;" }):
+                <h1 class="text-success"> @Html.DisplayFor(model => model.Y2, new { @class = "text-danger" })</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            @Html.LabelFor(model => model.Result, new { @class = "text-danger", @style = "font: 150% sans-serif;" }):
+            <h1 class="text-success"> @Html.DisplayFor(model => model.Result, new { @class = "text-danger" })</h1>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+﻿@model CalcularDosPuntos.Models.Puntos
+@{
+    ViewBag.Title = "RecibirFormulario";
+}
+
+<h2>RecibirFormulario</h2>
+
+@using (Html.BeginForm("RecibirFormulario", "Recibir"))
+{
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                @Html.LabelFor(Model => Model.X1)
+                @Html.EditorFor(Model => Model.X1, new { @required=""})
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(Model => Model.Y1)
+                @Html.EditorFor(Model => Model.Y1, new { @required = "" })
+            </div>
+        </div>
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                @Html.LabelFor(Model => Model.X2)
+                @Html.EditorFor(Model => Model.X2, new { @required = "" })
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(Model => Model.Y2)
+                @Html.EditorFor(Model => Model.Y2, new { @required = "" })
+            </div>
+        </div>
+    </div>
+  
+
+    <button type="submit" value="" class="btn btn-primary">Resolver</button>
+}
+
+
+
+
